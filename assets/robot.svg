@@ -30,7 +30,9 @@
 
   <!-- body -->
   <rect x="66" y="134" width="68" height="60" rx="16" fill="#e2e5ec" stroke="#c3c9d4" stroke-width="2"/>
-  <rect x="86" y="146" width="28" height="14" rx="5" fill="#6ad7c2"/>
+  <!-- chest badge: KAIST wordmark -->
+  <rect x="78" y="145" width="44" height="16" rx="5" fill="#004191"/>
+  <text x="100" y="157" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="9" font-weight="800" letter-spacing="0.5" fill="#ffffff">KAIST</text>
   <!-- legs -->
   <rect x="80" y="194" width="16" height="16" rx="5" fill="#2a2d36"/>
   <rect x="104" y="194" width="16" height="16" rx="5" fill="#2a2d36"/>
