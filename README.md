@@ -9,6 +9,8 @@
   <img alt="Jin Sam Cho — building at the intersection of AI, blockchain, and the physical world" src="assets/header-light.svg" width="720">
 </picture>
 
+<br>
+
 ### Currently
 
 - Serving open LLMs at scale — **vLLM on Google Cloud Run** · [vllm-cloud-run](https://github.com/ValleyJin/vllm-cloud-run)
@@ -48,12 +50,5 @@
   <img alt="GitHub activity for ValleyJin — contributions, repositories, stars, and top languages" src="assets/stats-light.svg" width="720">
 </picture>
 
-<sub>Auto-generated daily from the GitHub API · never a broken image.</sub>
-
----
-
-<sub>
-  <a href="https://valleyjin.github.io">valleyjin.github.io</a> &nbsp;·&nbsp;
-  <a href="https://x.com/ValleyJin">x/@ValleyJin</a> &nbsp;·&nbsp;
-  Coding + Business, from Seoul
-</sub>
+<br>
+<br>
