@@ -4,12 +4,14 @@
   and adapts to the viewer's light/dark theme via <picture>.
 -->
 
+<img align="right" width="150" src="assets/robot.svg" alt="A friendly robot waving hello">
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <img alt="Jin Sam Cho — building at the intersection of AI, blockchain, and the physical world" src="assets/header-light.svg" width="720">
+  <img alt="Jin Sam Cho — building at the intersection of AI, blockchain, and the physical world" src="assets/header-light.svg" width="560">
 </picture>
 
-<br>
+<br clear="all">
 
 ### Currently
 

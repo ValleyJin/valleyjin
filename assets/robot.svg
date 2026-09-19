@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="220" viewBox="0 0 200 220" fill="none" role="img" aria-label="A friendly robot waving hello with a blinking heart">
+  <!-- blinking heart (top-right) -->
+  <path d="M175 44c-5-9-19-4-19 6 0 8 10 13 19 20 9-7 19-12 19-20 0-10-14-15-19-6z" fill="#ff7a9c">
+    <animate attributeName="opacity" values="1;1;0.15;1;1" keyTimes="0;0.35;0.5;0.65;1" dur="1.3s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="scale" values="1;1.15;1" dur="1.3s" repeatCount="indefinite" additive="sum"/>
+  </path>
+
+  <!-- antenna -->
+  <line x1="100" y1="46" x2="100" y2="64" stroke="#aab0bd" stroke-width="4"/>
+  <circle cx="100" cy="40" r="7" fill="#6ad7c2">
+    <animate attributeName="cy" values="40;36;40" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- head -->
+  <rect x="60" y="64" width="80" height="64" rx="18" fill="#e2e5ec" stroke="#c3c9d4" stroke-width="2"/>
+  <!-- visor -->
+  <rect x="70" y="80" width="60" height="32" rx="14" fill="#12313a"/>
+  <!-- eyes (blink) -->
+  <g fill="#6ad7c2">
+    <ellipse cx="88" cy="96" rx="6" ry="8">
+      <animate attributeName="ry" values="8;8;8;1;8" keyTimes="0;0.86;0.9;0.94;1" dur="3.6s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="112" cy="96" rx="6" ry="8">
+      <animate attributeName="ry" values="8;8;8;1;8" keyTimes="0;0.86;0.9;0.94;1" dur="3.6s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+  <!-- cheeks -->
+  <circle cx="72" cy="116" r="4" fill="#ff9db0" opacity="0.55"/>
+  <circle cx="128" cy="116" r="4" fill="#ff9db0" opacity="0.55"/>
+
+  <!-- body -->
+  <rect x="66" y="134" width="68" height="60" rx="16" fill="#e2e5ec" stroke="#c3c9d4" stroke-width="2"/>
+  <rect x="86" y="146" width="28" height="14" rx="5" fill="#6ad7c2"/>
+  <!-- legs -->
+  <rect x="80" y="194" width="16" height="16" rx="5" fill="#2a2d36"/>
+  <rect x="104" y="194" width="16" height="16" rx="5" fill="#2a2d36"/>
+  <!-- static left arm -->
+  <rect x="52" y="140" width="13" height="42" rx="6" fill="#aab0bd"/>
+
+  <!-- waving right arm (pivots at shoulder 138,150) -->
+  <g>
+    <rect x="132" y="112" width="13" height="46" rx="6" fill="#aab0bd"/>
+    <circle cx="138" cy="108" r="10" fill="#e2e5ec" stroke="#c3c9d4" stroke-width="2"/>
+    <animateTransform attributeName="transform" type="rotate"
+      values="10 138 152; -24 138 152; 8 138 152; -24 138 152; 10 138 152"
+      keyTimes="0;0.25;0.5;0.75;1" dur="1.5s" repeatCount="indefinite"/>
+  </g>
+</svg>
