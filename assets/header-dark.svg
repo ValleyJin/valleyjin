@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="212" viewBox="0 0 880 212" fill="none" role="img" aria-label="Jin Sam Cho — building at the intersection of AI, blockchain, and the physical world">
+  <style>
+    .kick{font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;font-size:13px;letter-spacing:3px;fill:#7f818d}
+    .h{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:31px;font-weight:650;letter-spacing:-.5px;fill:#e9e9ee}
+    .a{fill:#6ad7c2}
+    .sub{font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;font-size:14px;letter-spacing:.5px;fill:#8b8d97}
+  </style>
+  <text x="5" y="34" class="kick">JIN SAM CHO · VALLEYJIN · SEOUL, KOREA</text>
+  <text x="4" y="90" class="h">Building at the intersection of <tspan class="a">AI</tspan>,</text>
+  <text x="4" y="132" class="h"><tspan class="a">blockchain</tspan>, and the <tspan class="a">physical world</tspan>.</text>
+  <line x1="6" y1="162" x2="300" y2="162" stroke="#6ad7c2" stroke-width="2"/>
+  <text x="5" y="192" class="sub">Coding + Business</text>
+</svg>
