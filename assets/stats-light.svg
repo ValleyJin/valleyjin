@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="250" viewBox="0 0 760 250" role="img" aria-label="GitHub stats for ValleyJin">
+<style>
+.kick{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;letter-spacing:2.5px;fill:#6b6d77}
+.num{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;font-size:30px;font-weight:650;fill:#0f8f79}
+.lbl{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:10px;letter-spacing:1.5px;fill:#6b6d77}
+.lng{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;fill:#16171b}
+.pct{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;fill:#6b6d77}
+</style>
+<text x="6" y="22" class="kick">GITHUB ACTIVITY · @VALLEYJIN</text>
+<text x="6" y="74" class="num">1,181</text>
+<text x="6" y="96" class="lbl">CONTRIBUTIONS</text>
+<text x="194" y="74" class="num">53</text>
+<text x="194" y="96" class="lbl">REPOSITORIES</text>
+<text x="382" y="74" class="num">12</text>
+<text x="382" y="96" class="lbl">STARS EARNED</text>
+<text x="570" y="74" class="num">25</text>
+<text x="570" y="96" class="lbl">FOLLOWERS</text>
+<line x1="6" y1="118" x2="746" y2="118" stroke="#e6e6e4" stroke-width="1"/>
+<text x="6" y="156" class="lng">TypeScript</text>
+<rect x="120" y="149" width="500" height="7" rx="3.5" fill="#e6e6e4"/>
+<rect x="120" y="149" width="165" height="7" rx="3.5" fill="#0f8f79"/>
+<text x="634" y="156" class="pct">33%</text>
+<text x="6" y="176" class="lng">CSS</text>
+<rect x="120" y="169" width="500" height="7" rx="3.5" fill="#e6e6e4"/>
+<rect x="120" y="169" width="125" height="7" rx="3.5" fill="#0f8f79"/>
+<text x="634" y="176" class="pct">25%</text>
+<text x="6" y="196" class="lng">JavaScript</text>
+<rect x="120" y="189" width="500" height="7" rx="3.5" fill="#e6e6e4"/>
+<rect x="120" y="189" width="100" height="7" rx="3.5" fill="#0f8f79"/>
+<text x="634" y="196" class="pct">20%</text>
+<text x="6" y="216" class="lng">HTML</text>
+<rect x="120" y="209" width="500" height="7" rx="3.5" fill="#e6e6e4"/>
+<rect x="120" y="209" width="45" height="7" rx="3.5" fill="#0f8f79"/>
+<text x="634" y="216" class="pct">9%</text>
+<text x="6" y="236" class="lng">Java</text>
+<rect x="120" y="229" width="500" height="7" rx="3.5" fill="#e6e6e4"/>
+<rect x="120" y="229" width="40" height="7" rx="3.5" fill="#0f8f79"/>
+<text x="634" y="236" class="pct">8%</text>
+</svg>
