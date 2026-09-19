@@ -41,13 +41,6 @@
   </tr>
 </table>
 
-### GitHub
-
-<a href="https://github.com/ValleyJin">
-  <img alt="GitHub stats" height="150"
-    src="https://github-readme-stats.vercel.app/api?username=ValleyJin&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=00000000&title_color=6ad7c2&icon_color=6ad7c2&text_color=808893&hide=contribs" />
-</a>
-
 ---
 
 <sub>
