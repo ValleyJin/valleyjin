@@ -41,6 +41,15 @@
   </tr>
 </table>
 
+### GitHub
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
+  <img alt="GitHub activity for ValleyJin — contributions, repositories, stars, and top languages" src="assets/stats-light.svg" width="720">
+</picture>
+
+<sub>Auto-generated daily from the GitHub API · never a broken image.</sub>
+
 ---
 
 <sub>
