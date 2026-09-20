@@ -110,16 +110,65 @@ jobs:
               return parts.join('\n') + '\n';
             }
 
+            // stacked variant for narrow screens: numbers on top, horizontal rule, pie below
+            function svgStacked(theme) {
+              const c = theme === 'dark'
+                ? { ink: '#e9e9ee', mut: '#7f818d', acc: '#6ad7c2', trk: '#20222b' }
+                : { ink: '#16171b', mut: '#6b6d77', acc: '#0f8f79', trk: '#e6e6e4' };
+              const pal = theme === 'dark'
+                ? ['#6ad7c2', '#4fb3a3', '#3d8f86', '#586170', '#3b414a']
+                : ['#0f8f79', '#3aa593', '#66ac9d', '#9099a3', '#c3c9d4'];
+              let parts = [];
+              parts.push('<svg xmlns="http://www.w3.org/2000/svg" width="400" height="376" viewBox="0 0 400 376" role="img" aria-label="GitHub stats for ' + esc(user) + '">');
+              parts.push('<style>');
+              parts.push('.kick{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;letter-spacing:2.5px;fill:' + c.mut + '}');
+              parts.push('.num{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;font-size:30px;font-weight:650;fill:' + c.acc + '}');
+              parts.push('.lbl{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:10px;letter-spacing:1.5px;fill:' + c.mut + '}');
+              parts.push('.lng{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;fill:' + c.ink + '}');
+              parts.push('.pct{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;fill:' + c.mut + '}');
+              parts.push('</style>');
+              parts.push('<text x="6" y="20" class="kick">GITHUB ACTIVITY · @' + esc(user).toUpperCase() + '</text>');
+              const colX = [6, 208], rowY = [78, 146];
+              stats.forEach((s, i) => {
+                const x = colX[i % 2], y = rowY[Math.floor(i / 2)];
+                parts.push('<text x="' + x + '" y="' + y + '" class="num">' + esc(s.n) + '</text>');
+                parts.push('<text x="' + x + '" y="' + (y + 22) + '" class="lbl">' + esc(s.l).toUpperCase() + '</text>');
+              });
+              parts.push('<line x1="6" y1="196" x2="394" y2="196" stroke="' + c.trk + '" stroke-width="1"/>');
+              const cx = 78, cy = 288, r = 54, w = 20;
+              const pt = a => [cx + r * Math.sin(a), cy - r * Math.cos(a)];
+              const sumPct = langs.reduce((a, L) => a + L.pct, 0) || 1;
+              let ang = 0;
+              langs.forEach((L, i) => {
+                const a1 = ang + (L.pct / sumPct) * Math.PI * 2;
+                const [x0, y0] = pt(ang), [x1, y1] = pt(a1);
+                const large = (a1 - ang) > Math.PI ? 1 : 0;
+                parts.push('<path d="M ' + x0.toFixed(2) + ' ' + y0.toFixed(2) + ' A ' + r + ' ' + r + ' 0 ' + large + ' 1 ' + x1.toFixed(2) + ' ' + y1.toFixed(2) + '" fill="none" stroke="' + pal[i % pal.length] + '" stroke-width="' + w + '"/>');
+                ang = a1;
+              });
+              const lx = 176;
+              langs.forEach((L, i) => {
+                const y = 246 + i * 22;
+                parts.push('<rect x="' + lx + '" y="' + (y - 9) + '" width="10" height="10" rx="2" fill="' + pal[i % pal.length] + '"/>');
+                parts.push('<text x="' + (lx + 18) + '" y="' + y + '" class="lng">' + esc(L.name) + '</text>');
+                parts.push('<text x="390" y="' + y + '" text-anchor="end" class="pct">' + L.pct + '%</text>');
+              });
+              parts.push('</svg>');
+              return parts.join('\n') + '\n';
+            }
+
             fs.mkdirSync('assets', { recursive: true });
             fs.writeFileSync('assets/stats-dark.svg', svg('dark'));
             fs.writeFileSync('assets/stats-light.svg', svg('light'));
-            core.info('Wrote assets/stats-{dark,light}.svg');
+            fs.writeFileSync('assets/stats-stacked-dark.svg', svgStacked('dark'));
+            fs.writeFileSync('assets/stats-stacked-light.svg', svgStacked('light'));
+            core.info('Wrote assets/stats-{dark,light}.svg + stacked variants');
 
       - name: Commit if changed
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/stats-dark.svg assets/stats-light.svg
+          git add assets/stats-dark.svg assets/stats-light.svg assets/stats-stacked-dark.svg assets/stats-stacked-light.svg
           if ! git diff --cached --quiet; then
             git commit -m "chore: refresh stats SVG [skip ci]"
             git push
