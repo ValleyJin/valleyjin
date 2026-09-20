@@ -30,15 +30,18 @@ def main():
     x2 = x1 + w(label) + gap
     x3 = x2 + w(ptxt) + gap
     W = int(round(x3 + w(ctxt) + pad))
-    H = 30
+    title = "Stock Price"        # 배지 안에 캡션으로 (K3I 라벨과 같은 회색·가는 mono)
+    tY, pillY, pillH = 15, 24, 30
+    H = pillY + pillH
     svg = (
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" role="img" '
-        f'aria-label="K3I KOSDAQ 431190 {ptxt} {ctxt}">'
-        f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="7" fill="#0d1117" stroke="#2a2f37"/>'
+        f'aria-label="{title} — K3I KOSDAQ 431190 {ptxt} {ctxt}">'
         f'<g font-family="ui-monospace,SFMono-Regular,Menlo,monospace">'
-        f'<text x="{x1:.0f}" y="19.5" font-size="11.5" fill="#8b949e">{label}</text>'
-        f'<text x="{x2:.0f}" y="19.5" font-size="12.5" font-weight="700" fill="#e6edf3">{ptxt}</text>'
-        f'<text x="{x3:.0f}" y="19.5" font-size="11.5" font-weight="700" fill="{color}">{ctxt}</text>'
+        f'<text x="{x1:.0f}" y="{tY}" font-size="11.5" fill="#8b949e">{title}</text>'
+        f'<rect x="0.5" y="{pillY+0.5}" width="{W-1}" height="{pillH-1}" rx="7" fill="#0d1117" stroke="#2a2f37"/>'
+        f'<text x="{x1:.0f}" y="{pillY+19.5:.1f}" font-size="11.5" fill="#8b949e">{label}</text>'
+        f'<text x="{x2:.0f}" y="{pillY+19.5:.1f}" font-size="12.5" font-weight="700" fill="#e6edf3">{ptxt}</text>'
+        f'<text x="{x3:.0f}" y="{pillY+19.5:.1f}" font-size="11.5" font-weight="700" fill="{color}">{ctxt}</text>'
         f'</g></svg>'
     )
     OUT.write_text(svg, encoding="utf-8")

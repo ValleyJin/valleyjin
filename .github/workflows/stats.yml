@@ -68,7 +68,7 @@ jobs:
                 ? ['#6ad7c2', '#4fb3a3', '#3d8f86', '#586170', '#3b414a']
                 : ['#0f8f79', '#3aa593', '#66ac9d', '#9099a3', '#c3c9d4'];
               let parts = [];
-              parts.push('<svg xmlns="http://www.w3.org/2000/svg" width="760" height="236" viewBox="0 0 760 236" role="img" aria-label="GitHub stats for ' + esc(user) + '">');
+              parts.push('<svg xmlns="http://www.w3.org/2000/svg" width="865" height="236" viewBox="0 0 865 236" role="img" aria-label="GitHub stats for ' + esc(user) + '">');
               parts.push('<style>');
               parts.push('.kick{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;letter-spacing:2.5px;fill:' + c.mut + '}');
               parts.push('.num{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;font-size:30px;font-weight:650;fill:' + c.acc + '}');
@@ -84,10 +84,10 @@ jobs:
                 parts.push('<text x="' + x + '" y="' + y + '" class="num">' + esc(s.n) + '</text>');
                 parts.push('<text x="' + x + '" y="' + (y + 22) + '" class="lbl">' + esc(s.l).toUpperCase() + '</text>');
               });
-              // vertical divider
-              parts.push('<line x1="372" y1="56" x2="372" y2="214" stroke="' + c.trk + '" stroke-width="1"/>');
+              // vertical divider — 파이 그룹을 우측으로 밀어(썸네일 좌측선과 정렬) 구분선을 여기에
+              parts.push('<line x1="487" y1="56" x2="487" y2="214" stroke="' + c.trk + '" stroke-width="1"/>');
               // right: donut of top languages
-              const cx = 466, cy = 135, r = 58, w = 20;
+              const cx = 581, cy = 135, r = 58, w = 20;
               const pt = a => [cx + r * Math.sin(a), cy - r * Math.cos(a)];
               const sumPct = langs.reduce((a, L) => a + L.pct, 0) || 1;
               let ang = 0;
@@ -99,12 +99,12 @@ jobs:
                 ang = a1;
               });
               // right: legend
-              const lx = 558;
+              const lx = 673;
               langs.forEach((L, i) => {
                 const y = 96 + i * 20;
                 parts.push('<rect x="' + lx + '" y="' + (y - 9) + '" width="10" height="10" rx="2" fill="' + pal[i % pal.length] + '"/>');
                 parts.push('<text x="' + (lx + 18) + '" y="' + y + '" class="lng">' + esc(L.name) + '</text>');
-                parts.push('<text x="746" y="' + y + '" text-anchor="end" class="pct">' + L.pct + '%</text>');
+                parts.push('<text x="861" y="' + y + '" text-anchor="end" class="pct">' + L.pct + '%</text>');
               });
               parts.push('</svg>');
               return parts.join('\n') + '\n';

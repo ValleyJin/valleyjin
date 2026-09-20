@@ -60,7 +60,6 @@ A **multilingual batch-translation system**, designed and built end-to-end. Exce
 PPT · PDF · Google Workspace → **50+ languages** in one pass, formatting preserved. Sentence
 caching cuts cost up to 80%; glossary, 0%-omission checks, and TTS in 40+ languages.
 
-**Stock Price**<br>
 <a href="https://finance.naver.com/item/main.naver?code=431190"><img src="assets/k3i-stock.svg" alt="K3I Co., Ltd — KOSDAQ 431190 price"></a>
 
 <br clear="all">
@@ -69,7 +68,7 @@ caching cuts cost up to 80%; glossary, 0%-omission checks, and TTS in 40+ langua
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
-  <img alt="GitHub activity for ValleyJin — contributions, repositories, stars, and top languages" src="assets/stats-light.svg" width="720">
+  <img alt="GitHub activity for ValleyJin — contributions, repositories, stars, and top languages" src="assets/stats-light.svg" width="100%">
 </picture>
 
 <br>
