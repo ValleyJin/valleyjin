@@ -64,9 +64,11 @@ jobs:
               const c = theme === 'dark'
                 ? { ink: '#e9e9ee', mut: '#7f818d', acc: '#6ad7c2', trk: '#20222b' }
                 : { ink: '#16171b', mut: '#6b6d77', acc: '#0f8f79', trk: '#e6e6e4' };
-              const colX = [6, 194, 382, 570];
+              const pal = theme === 'dark'
+                ? ['#6ad7c2', '#4fb3a3', '#3d8f86', '#586170', '#3b414a']
+                : ['#0f8f79', '#3aa593', '#66ac9d', '#9099a3', '#c3c9d4'];
               let parts = [];
-              parts.push('<svg xmlns="http://www.w3.org/2000/svg" width="760" height="250" viewBox="0 0 760 250" role="img" aria-label="GitHub stats for ' + esc(user) + '">');
+              parts.push('<svg xmlns="http://www.w3.org/2000/svg" width="760" height="236" viewBox="0 0 760 236" role="img" aria-label="GitHub stats for ' + esc(user) + '">');
               parts.push('<style>');
               parts.push('.kick{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;letter-spacing:2.5px;fill:' + c.mut + '}');
               parts.push('.num{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;font-size:30px;font-weight:650;fill:' + c.acc + '}');
@@ -75,18 +77,34 @@ jobs:
               parts.push('.pct{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;fill:' + c.mut + '}');
               parts.push('</style>');
               parts.push('<text x="6" y="22" class="kick">GITHUB ACTIVITY · @' + esc(user).toUpperCase() + '</text>');
+              // left: four stats in a 2x2 grid
+              const colX = [6, 190], rowY = [108, 186];
               stats.forEach((s, i) => {
-                parts.push('<text x="' + colX[i] + '" y="74" class="num">' + esc(s.n) + '</text>');
-                parts.push('<text x="' + colX[i] + '" y="96" class="lbl">' + esc(s.l).toUpperCase() + '</text>');
+                const x = colX[i % 2], y = rowY[Math.floor(i / 2)];
+                parts.push('<text x="' + x + '" y="' + y + '" class="num">' + esc(s.n) + '</text>');
+                parts.push('<text x="' + x + '" y="' + (y + 22) + '" class="lbl">' + esc(s.l).toUpperCase() + '</text>');
               });
-              parts.push('<line x1="6" y1="118" x2="746" y2="118" stroke="' + c.trk + '" stroke-width="1"/>');
-              const barX = 120, barW = 500;
+              // vertical divider
+              parts.push('<line x1="372" y1="56" x2="372" y2="214" stroke="' + c.trk + '" stroke-width="1"/>');
+              // right: donut of top languages
+              const cx = 466, cy = 135, r = 58, w = 20;
+              const pt = a => [cx + r * Math.sin(a), cy - r * Math.cos(a)];
+              const sumPct = langs.reduce((a, L) => a + L.pct, 0) || 1;
+              let ang = 0;
               langs.forEach((L, i) => {
-                const y = 152 + i * 20;
-                parts.push('<text x="6" y="' + (y + 4) + '" class="lng">' + esc(L.name) + '</text>');
-                parts.push('<rect x="' + barX + '" y="' + (y - 3) + '" width="' + barW + '" height="7" rx="3.5" fill="' + c.trk + '"/>');
-                parts.push('<rect x="' + barX + '" y="' + (y - 3) + '" width="' + Math.round(barW * L.pct / 100) + '" height="7" rx="3.5" fill="' + c.acc + '"/>');
-                parts.push('<text x="' + (barX + barW + 14) + '" y="' + (y + 4) + '" class="pct">' + L.pct + '%</text>');
+                const a1 = ang + (L.pct / sumPct) * Math.PI * 2;
+                const [x0, y0] = pt(ang), [x1, y1] = pt(a1);
+                const large = (a1 - ang) > Math.PI ? 1 : 0;
+                parts.push('<path d="M ' + x0.toFixed(2) + ' ' + y0.toFixed(2) + ' A ' + r + ' ' + r + ' 0 ' + large + ' 1 ' + x1.toFixed(2) + ' ' + y1.toFixed(2) + '" fill="none" stroke="' + pal[i % pal.length] + '" stroke-width="' + w + '"/>');
+                ang = a1;
+              });
+              // right: legend
+              const lx = 558;
+              langs.forEach((L, i) => {
+                const y = 96 + i * 20;
+                parts.push('<rect x="' + lx + '" y="' + (y - 9) + '" width="10" height="10" rx="2" fill="' + pal[i % pal.length] + '"/>');
+                parts.push('<text x="' + (lx + 18) + '" y="' + y + '" class="lng">' + esc(L.name) + '</text>');
+                parts.push('<text x="746" y="' + y + '" text-anchor="end" class="pct">' + L.pct + '%</text>');
               });
               parts.push('</svg>');
               return parts.join('\n') + '\n';
