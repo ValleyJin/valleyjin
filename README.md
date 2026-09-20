@@ -13,6 +13,11 @@
 
 <br clear="all">
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/github-snake-dark.svg">
+  <img alt="ValleyJin's GitHub contribution graph as a snake" src="assets/github-snake.svg" width="100%">
+</picture>
+
 ### Currently
 
 - Serving open LLMs at scale — **vLLM on Google Cloud Run** · [vllm-cloud-run](https://github.com/ValleyJin/vllm-cloud-run)
