@@ -1,7 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="865" height="236" viewBox="0 0 865 236" role="img" aria-label="GitHub stats for ValleyJin">
-<style>.kick{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;letter-spacing:2.5px;fill:#7f818d}.num{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;font-size:30px;font-weight:650;fill:#6ad7c2}.lbl{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:10px;letter-spacing:1.5px;fill:#7f818d}.lng{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;fill:#e9e9ee}.pct{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;fill:#7f818d}</style>
+<style>
+.kick{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;letter-spacing:2.5px;fill:#7f818d}
+.num{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;font-size:30px;font-weight:650;fill:#6ad7c2}
+.lbl{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:10px;letter-spacing:1.5px;fill:#7f818d}
+.lng{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;fill:#e9e9ee}
+.pct{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;fill:#7f818d}
+</style>
 <text x="6" y="22" class="kick">GITHUB ACTIVITY · @VALLEYJIN</text>
-<text x="6" y="108" class="num">1,285</text>
+<text x="6" y="108" class="num">1,287</text>
 <text x="6" y="130" class="lbl">CONTRIBUTIONS</text>
 <text x="190" y="108" class="num">53</text>
 <text x="190" y="130" class="lbl">REPOSITORIES</text>
