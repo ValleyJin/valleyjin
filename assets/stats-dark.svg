@@ -7,7 +7,7 @@
 .pct{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;fill:#7f818d}
 </style>
 <text x="6" y="22" class="kick">GITHUB ACTIVITY · @VALLEYJIN</text>
-<text x="6" y="108" class="num">1,208</text>
+<text x="6" y="108" class="num">1,285</text>
 <text x="6" y="130" class="lbl">CONTRIBUTIONS</text>
 <text x="190" y="108" class="num">53</text>
 <text x="190" y="130" class="lbl">REPOSITORIES</text>
@@ -16,23 +16,23 @@
 <text x="190" y="186" class="num">25</text>
 <text x="190" y="208" class="lbl">FOLLOWERS</text>
 <line x1="487" y1="56" x2="487" y2="214" stroke="#20222b" stroke-width="1"/>
-<path d="M 581.00 77.00 A 58 58 0 0 1 629.89 166.21" fill="none" stroke="#6ad7c2" stroke-width="20"/>
-<path d="M 629.89 166.21 A 58 58 0 0 1 548.18 182.82" fill="none" stroke="#4fb3a3" stroke-width="20"/>
-<path d="M 548.18 182.82 A 58 58 0 0 1 528.39 110.59" fill="none" stroke="#3d8f86" stroke-width="20"/>
-<path d="M 528.39 110.59 A 58 58 0 0 1 551.44 85.10" fill="none" stroke="#586170" stroke-width="20"/>
-<path d="M 551.44 85.10 A 58 58 0 0 1 581.00 77.00" fill="none" stroke="#3b414a" stroke-width="20"/>
+<path d="M 581.00 77.00 A 58 58 0 0 1 632.46 161.76" fill="none" stroke="#6ad7c2" stroke-width="20"/>
+<path d="M 632.46 161.76 A 58 58 0 0 1 550.08 184.07" fill="none" stroke="#4fb3a3" stroke-width="20"/>
+<path d="M 550.08 184.07 A 58 58 0 0 1 527.14 113.47" fill="none" stroke="#3d8f86" stroke-width="20"/>
+<path d="M 527.14 113.47 A 58 58 0 0 1 551.72 84.93" fill="none" stroke="#586170" stroke-width="20"/>
+<path d="M 551.72 84.93 A 58 58 0 0 1 581.00 77.00" fill="none" stroke="#3b414a" stroke-width="20"/>
 <rect x="673" y="87" width="10" height="10" rx="2" fill="#6ad7c2"/>
 <text x="691" y="96" class="lng">TypeScript</text>
-<text x="861" y="96" text-anchor="end" class="pct">32%</text>
+<text x="861" y="96" text-anchor="end" class="pct">31%</text>
 <rect x="673" y="107" width="10" height="10" rx="2" fill="#4fb3a3"/>
 <text x="691" y="116" class="lng">CSS</text>
-<text x="861" y="116" text-anchor="end" class="pct">24%</text>
+<text x="861" y="116" text-anchor="end" class="pct">25%</text>
 <rect x="673" y="127" width="10" height="10" rx="2" fill="#3d8f86"/>
 <text x="691" y="136" class="lng">JavaScript</text>
 <text x="861" y="136" text-anchor="end" class="pct">21%</text>
 <rect x="673" y="147" width="10" height="10" rx="2" fill="#586170"/>
 <text x="691" y="156" class="lng">HTML</text>
-<text x="861" y="156" text-anchor="end" class="pct">9%</text>
+<text x="861" y="156" text-anchor="end" class="pct">10%</text>
 <rect x="673" y="167" width="10" height="10" rx="2" fill="#3b414a"/>
 <text x="691" y="176" class="lng">Java</text>
 <text x="861" y="176" text-anchor="end" class="pct">8%</text>
