@@ -51,10 +51,9 @@
 
 **[Kyopo AI](https://kyopo.ai)** &nbsp;·&nbsp; *solo, end-to-end*
 
-A **multilingual batch-translation system** that **7 AI agents develop and operate
-automatically**. Excel · Word · HWPX · PPT · PDF · Google Workspace → **50+ languages** in one
-pass, formatting preserved. Sentence caching cuts cost up to 80%; glossary, 0%-omission checks,
-and TTS in 40+ languages. Powered by K3I's PersonaXR deep-persona AI.
+A **multilingual batch-translation system**, designed and built end-to-end. Excel · Word · HWPX ·
+PPT · PDF · Google Workspace → **50+ languages** in one pass, formatting preserved. Sentence
+caching cuts cost up to 80%; glossary, 0%-omission checks, and TTS in 40+ languages.
 
 [kyopo.ai&nbsp;→](https://kyopo.ai)
 
