@@ -17,7 +17,7 @@ def main():
     code = str((d.get("compareToPreviousPrice") or {}).get("code", "3"))
     up, down = code in ("1", "2"), code in ("4", "5")
     arrow = "▲" if up else ("▼" if down else "—")
-    color = "#26c281" if up else ("#f0616d" if down else "#8b949e")
+    color = "#f2444e" if up else ("#3b82f6" if down else "#8b949e")   # 코스닥 관례: 상승 빨강, 하락 파랑
     label = "K3I · KOSDAQ 431190"
     ptxt = "₩" + price
     ctxt = f"{arrow} {ratio}%" if ratio is not None else ""
