@@ -60,7 +60,8 @@ A **multilingual batch-translation system**, designed and built end-to-end. Exce
 PPT · PDF · Google Workspace → **50+ languages** in one pass, formatting preserved. Sentence
 caching cuts cost up to 80%; glossary, 0%-omission checks, and TTS in 40+ languages.
 
-[kyopo.ai&nbsp;→](https://kyopo.ai)
+<a href="https://finance.naver.com/item/main.naver?code=431190"><img src="assets/k3i-stock.svg" alt="K3I Co., Ltd — KOSDAQ 431190 price"></a>
+<br><sub>KOSDAQ 431190 · 지연 시세(참고용) · 장중 ~15분 주기 갱신 · 출처 Naver Finance</sub>
 
 <br clear="all">
 
