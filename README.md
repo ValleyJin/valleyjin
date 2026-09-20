@@ -67,10 +67,8 @@ caching cuts cost up to 80%; glossary, 0%-omission checks, and TTS in 40+ langua
 ### GitHub
 
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/stats-stacked-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/stats-stacked-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
-  <img alt="GitHub activity for ValleyJin — contributions, repositories, stars, and top languages" src="assets/stats-light.svg" width="100%">
+  <source media="(max-width: 520px)" srcset="assets/stats-stacked.svg">
+  <img alt="GitHub activity for ValleyJin — contributions, repositories, stars, and top languages" src="assets/stats-wide.svg" width="100%">
 </picture>
 
 <br>
