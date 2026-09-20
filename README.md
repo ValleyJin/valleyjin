@@ -52,5 +52,9 @@
   <img alt="GitHub activity for ValleyJin — contributions, repositories, stars, and top languages" src="assets/stats-light.svg" width="720">
 </picture>
 
+### Writing
+
+I publish essays and notes on&nbsp;<a href="https://medium.com/@ValleyJin"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/medium-dark.svg"><img alt="Medium" src="assets/medium-light.svg" height="13" align="top"></picture>&nbsp;<b>Medium&nbsp;@ValleyJin</b></a>.
+
 <br>
 <br>
