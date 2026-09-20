@@ -47,11 +47,21 @@
 
 ### Launched
 
-- **[Kyopo AI](https://kyopo.ai)** — *solo, end-to-end.* A **multilingual batch-translation
-  system** that **7 AI agents develop and operate automatically**. Excel · Word · HWPX · PPT ·
-  PDF · Google Workspace → **50+ languages** in one pass, formatting preserved. Sentence caching
-  cuts cost up to 80%; glossary, 0%-omission checks, and TTS in 40+ languages. Powered by K3I's
-  PersonaXR deep-persona AI (7 personas, each with its own expertise).
+<table>
+  <tr>
+    <td width="56%" valign="middle">
+      <b><a href="https://kyopo.ai">Kyopo AI</a></b> &nbsp;·&nbsp; <i>solo, end-to-end</i><br><br>
+      A <b>multilingual batch-translation system</b> that <b>7 AI agents develop and operate
+      automatically</b>. Excel · Word · HWPX · PPT · PDF · Google Workspace → <b>50+ languages</b>
+      in one pass, formatting preserved. Sentence caching cuts cost up to 80%; glossary,
+      0%-omission checks, and TTS in 40+ languages. Powered by K3I's PersonaXR deep-persona AI.<br><br>
+      <a href="https://kyopo.ai">kyopo.ai&nbsp;→</a>
+    </td>
+    <td width="44%">
+      <a href="https://kyopo.ai"><img src="assets/kyopo-thumb.jpg" alt="Kyopo AI — Let the world speak, multilingual batch translation" width="100%"></a>
+    </td>
+  </tr>
+</table>
 
 ### GitHub
 
