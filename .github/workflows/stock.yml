@@ -32,6 +32,10 @@ jobs:
           if git diff --cached --quiet; then
             echo "No change."
           else
+            # bust GitHub's image (camo) cache by bumping the ?t= query in the README
+            TS=$(date +%s)
+            sed -i "s|k3i-stock\.svg?t=[0-9]*|k3i-stock.svg?t=$TS|" README.md
+            git add README.md
             git commit -m "chore: refresh K3I stock badge [skip ci]"
             git push
           fi
