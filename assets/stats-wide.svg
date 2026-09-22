@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="865" height="236" viewBox="0 0 865 236" role="img" aria-label="GitHub stats for ValleyJin">
 <style>:root{--ink:#16171b;--mut:#6b6d77;--acc:#0f8f79;--trk:#e6e6e4;--p0:#0f8f79;--p1:#3aa593;--p2:#66ac9d;--p3:#9099a3;--p4:#c3c9d4}@media(prefers-color-scheme:dark){:root{--ink:#e9e9ee;--mut:#7f818d;--acc:#6ad7c2;--trk:#20222b;--p0:#6ad7c2;--p1:#4fb3a3;--p2:#3d8f86;--p3:#586170;--p4:#3b414a}}.kick{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;letter-spacing:2.5px;fill:var(--mut)}.num{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;font-size:30px;font-weight:650;fill:var(--acc)}.lbl{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:10px;letter-spacing:1.5px;fill:var(--mut)}.lng{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;fill:var(--ink)}.pct{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;fill:var(--mut)}.dv{stroke:var(--trk);stroke-width:1}.s0{stroke:var(--p0)}.s1{stroke:var(--p1)}.s2{stroke:var(--p2)}.s3{stroke:var(--p3)}.s4{stroke:var(--p4)}.g0{fill:var(--p0)}.g1{fill:var(--p1)}.g2{fill:var(--p2)}.g3{fill:var(--p3)}.g4{fill:var(--p4)}</style>
 <text x="6" y="22" class="kick">GITHUB ACTIVITY · @VALLEYJIN</text>
-<text x="6" y="108" class="num">1,322</text>
+<text x="6" y="108" class="num">1,346</text>
 <text x="6" y="130" class="lbl">CONTRIBUTIONS</text>
 <text x="190" y="108" class="num">53</text>
 <text x="190" y="130" class="lbl">REPOSITORIES</text>
@@ -10,17 +10,17 @@
 <text x="190" y="186" class="num">25</text>
 <text x="190" y="208" class="lbl">FOLLOWERS</text>
 <line class="dv" x1="487" y1="56" x2="487" y2="214"/>
-<path class="s0" d="M 581.00 77.00 A 58 58 0 0 1 632.46 161.76" fill="none" stroke-width="20"/>
-<path class="s1" d="M 632.46 161.76 A 58 58 0 0 1 550.08 184.07" fill="none" stroke-width="20"/>
-<path class="s2" d="M 550.08 184.07 A 58 58 0 0 1 527.14 113.47" fill="none" stroke-width="20"/>
-<path class="s3" d="M 527.14 113.47 A 58 58 0 0 1 551.72 84.93" fill="none" stroke-width="20"/>
-<path class="s4" d="M 551.72 84.93 A 58 58 0 0 1 581.00 77.00" fill="none" stroke-width="20"/>
+<path class="s0" d="M 581.00 77.00 A 58 58 0 0 1 633.07 160.54" fill="none" stroke-width="20"/>
+<path class="s1" d="M 633.07 160.54 A 58 58 0 0 1 552.85 185.71" fill="none" stroke-width="20"/>
+<path class="s2" d="M 552.85 185.71 A 58 58 0 0 1 526.61 114.86" fill="none" stroke-width="20"/>
+<path class="s3" d="M 526.61 114.86 A 58 58 0 0 1 551.16 85.27" fill="none" stroke-width="20"/>
+<path class="s4" d="M 551.16 85.27 A 58 58 0 0 1 581.00 77.00" fill="none" stroke-width="20"/>
 <rect class="g0" x="673" y="87" width="10" height="10" rx="2"/>
 <text x="691" y="96" class="lng">TypeScript</text>
-<text x="861" y="96" text-anchor="end" class="pct">31%</text>
+<text x="861" y="96" text-anchor="end" class="pct">30%</text>
 <rect class="g1" x="673" y="107" width="10" height="10" rx="2"/>
 <text x="691" y="116" class="lng">CSS</text>
-<text x="861" y="116" text-anchor="end" class="pct">25%</text>
+<text x="861" y="116" text-anchor="end" class="pct">24%</text>
 <rect class="g2" x="673" y="127" width="10" height="10" rx="2"/>
 <text x="691" y="136" class="lng">JavaScript</text>
 <text x="861" y="136" text-anchor="end" class="pct">21%</text>
