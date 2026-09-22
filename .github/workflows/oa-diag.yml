@@ -1,0 +1,30 @@
+name: OpenAlex diag (one-off)
+on: { workflow_dispatch: {} }
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Find NeurIPS/ICML/ICLR sources and paper hosts
+        run: |
+          python3 - <<'PY'
+          import urllib.request, urllib.parse, json
+          M='jscho71@kaist.ac.kr'
+          def get(u):
+              with urllib.request.urlopen(u, timeout=60) as r: return json.load(r)
+          for q in ['Neural Information Processing Systems',
+                    'International Conference on Machine Learning',
+                    'International Conference on Learning Representations']:
+              d=get('https://api.openalex.org/sources?search='+urllib.parse.quote(q)+'&per_page=8&mailto='+M)
+              print('###', q)
+              for s in d.get('results',[]):
+                  print('  ', s['id'].split('/')[-1], 'works=%s'%s.get('works_count'), s.get('type'), '|', s['display_name'])
+          print('### NeurIPS 2024 papers -> primary source')
+          d=get('https://api.openalex.org/works?filter=title.search:attention,publication_year:2024&per_page=1&mailto='+M)
+          for name in ['NeurIPS 2024']:
+              pass
+          # 실제 최근 NeurIPS 논문 host source
+          d=get('https://api.openalex.org/works?search=NeurIPS&filter=publication_year:2024&per_page=5&mailto='+M)
+          for w in d.get('results',[]):
+              pl=(w.get('primary_location') or {}).get('source') or {}
+              print('  paper src:', (pl.get('id') or '').split('/')[-1], '|', pl.get('display_name'), '|', (w.get('title') or '')[:40])
+          PY
