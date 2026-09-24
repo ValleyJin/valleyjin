@@ -60,7 +60,7 @@ A **multilingual batch-translation system**, designed and built end-to-end. Exce
 PPT · PDF · Google Workspace → **50+ languages** in one pass, formatting preserved. Sentence
 caching cuts cost up to 80%; glossary, 0%-omission checks, and TTS in 40+ languages.
 
-<a href="https://finance.naver.com/item/main.naver?code=431190"><img src="assets/k3i-stock.svg?t=1790153157" alt="K3I Co., Ltd — KOSDAQ 431190 price"></a>
+<a href="https://finance.naver.com/item/main.naver?code=431190"><img src="assets/k3i-stock.svg?t=1790219217" alt="K3I Co., Ltd — KOSDAQ 431190 price"></a>
 
 <br clear="all">
 
